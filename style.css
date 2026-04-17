@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0B0B0B;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(12px);
+}
+
+.logo span { color: #D4AF37; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 span { color: #D4AF37; }
+
+.sub { color: #aaa; }
+.desc { max-width: 500px; margin: auto; }
+
+.buttons button {
+  margin: 10px;
+  padding: 12px 25px;
+  background: #D4AF37;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons .outline {
+  background: transparent;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+}
+
+button:hover {
+  transform: translateY(-4px);
+}
+
+/* Sections */
+.section {
+  padding: 80px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  background: #121212;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border: 1px solid #D4AF37;
+}
+
+/* Icons */
+.section i {
+  color: #D4AF37;
+  margin-right: 10px;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 50%;
+  color: #D4AF37;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  transform: translateY(-4px);
+  background: rgba(212,175,55,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .grid { grid-template-columns: 1fr; }
+}
